@@ -1,0 +1,4 @@
+sudo apt -y install ntp ntpdate
+sudo timedatectl set-ntp True
+
+perl -i -pe 's/#server ntp\.your-provider\.example/server 172.16.30.37/g' /etc/ntp.conf
